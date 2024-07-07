@@ -2,13 +2,13 @@
 
 <dl>
   <dt>First number</dt>
-  <dd><%= @first_number %></dd>
+  <dd><%= params.fetch("first_number").to_f %></dd>
 
   <dt>Second number</dt>
-  <dd><%= @second_num %></dd>
+  <dd><%= params.fetch("second_number").to_f %></dd>
 
   <dt>Result</dt>
-  <dd><%= @result %></dd>
+  <dd><%= params.fetch("second_number").to_f * params.fetch("first_number").to_f %></dd>
 </dl>
 
 <a href="/multiply">Do another multiplication</a>
